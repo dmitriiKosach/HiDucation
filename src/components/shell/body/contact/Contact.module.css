@@ -1,0 +1,192 @@
+.contact{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-top: 6rem;
+}
+
+.contact__header{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px solid #e04050;
+  margin-top: 2rem;
+  padding-bottom: 10px;
+  height: 6vh;
+}
+
+.contact__header_strip div{
+  width: 0.2rem;
+  height: 2.5rem;
+  background-color: rgb(64, 224, 208);
+}
+
+.contact__header_title{
+  font-size: 2.33rem;
+  font-weight: 300;
+  line-height: 4.66rem;
+  margin-left: 0.26rem;
+}
+
+.contact__body{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__title{
+  margin-top: 2.66rem;
+  font-size: 2.33rem;
+  font-weight: 400;
+}
+
+.contact__subtitle{
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+.contact__message{
+  width: 46.66rem;
+  height: 10.66rem;
+  box-shadow: 0 0 4px #808080;
+  border-radius: 2rem;
+  margin-top: 3.33rem;
+  padding: 1rem;
+  resize: none;
+  font-size: 1rem;
+  color: #808080;
+}
+
+textarea {
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #808080;
+  transition: all .2s linear;
+  background: none;
+}
+
+::placeholder{
+  color: #808080;
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
+.contact__data{
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  width: 46.66rem;
+
+  margin-top: 2rem;
+}
+
+.contact__data_input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input__email, .input__name{
+  box-shadow: 0 0 4px #808080;
+  border: 1px solid #808080;
+  border-radius: 2rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: #808080;
+  height: 2.66rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  background: none;
+  transition: all .2s linear;
+}
+.input__email{
+  width: 55%;
+}
+.input__name{
+  width: 40%;
+}
+
+.input__email:hover, .input__email:focus,
+.input__name:hover, .input__name:focus,
+     textarea:hover, textarea:focus{
+  border: 1px solid #40e0d0;
+}
+
+.contact__data_button {
+
+  box-shadow: 0 0 4px #808080;
+  width: 18%;
+  background: none;
+  border: 1px solid #808080;
+  color: #808080;
+  padding: 0.53rem 1rem;
+  transition: all .2s linear;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+.contact__data_button:hover, .contact__data_button.active {
+  background-color: #40e0d0;
+  border-color: #40e0d0;
+  color: #ffffff;
+}
+
+.contact__data_button:disabled{
+  border: 1px solid #808080;
+  background: none;
+  color:#808080;
+  cursor: default;
+}
+
+.input__error_message{
+  position: absolute;
+  bottom: 0;
+  padding-left: 16px;
+  font-size: 10px;
+  color: #e04050;
+}
+
+@media(max-width: 767px){
+
+  .contact__message{
+  width: 95vw;
+  min-width: 22rem;
+  height: 30vh;
+  }
+
+  .contact__data{
+    flex-direction: column;
+    width: 95vw;
+    margin-bottom: 4.6rem;
+  }
+
+  .contact__data_input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+  .input__email, .input__name {
+  margin-right: 0;
+  margin-bottom: 2rem;
+  width: 49%;
+}
+ .contact__data_button{
+  min-width: 26rem;
+}
+}
+
+@media(max-width: 605px){
+  .contact__data_input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .input__email, .input__name, .contact__data_button{
+    min-width: 22rem;
+  }
+}

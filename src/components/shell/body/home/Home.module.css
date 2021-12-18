@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Comfortaa Regular", cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap')
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-top: 6rem;
+    z-index: 0;
+}
+
+.home__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5.33rem;
+    line-height: 95px;
+}
+
+.title {
+    font-size: 8rem;
+    font-weight: 500;
+    color: #40e0d0;
+    -webkit-text-stroke: 1px #18b8a9;
+    text-shadow: 0 0 10px #808080;
+}
+
+.subtitle {
+    /*font-family: "Comfortaa Regular", cursive;*/
+    /*font-family: 'Lobster Two', cursive;*/
+    /*font-family: 'Palette Mosaic', cursive;*/
+    /*font-family: 'Anton', sans-serif;*/
+    font-family: 'Righteous', cursive;
+
+    font-size: 3rem;
+    color: #e04050;
+    margin-top: -15px;
+    /*letter-spacing: 9px;*/
+    /*text-shadow: 0 0 3px #808080;*/
+    /*-webkit-text-stroke: 1px #18b8a9;*/
+}
+
+.video {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    box-shadow: 0 0 10px #828282;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 3rem;
+    opacity: 0.5;
+}
+
+@media (max-width: 747px) {
+    .title {
+        font-size: 6rem;
+    }
+
+    .video {
+        /*display: none;*/
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .subtitle {
+        font-size: 2.4rem;
+    }
+
+    .home__title {
+        line-height: 85px;
+        margin: 2.5rem 0 0.5rem;
+    }
+}
+
+.option-enter {
+    opacity: 0;
+
+}
+
+.option-enter.option-enter-active {
+    opacity: 1;
+    transition: opacity .2s ease;
+}
+
+@media (max-width: 556px) {
+
+    .video {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .title {
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .home__title {
+        line-height: 125px;
+    }
+}
+
+@media (max-width: 485px) {
+    .video {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .title {
+        line-height: 60px;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
+    }
+
+    .home__title {
+        line-height: 90px;
+    }
+}
+

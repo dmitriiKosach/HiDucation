@@ -1,0 +1,44 @@
+﻿html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color:#808080;
+/*  background: url("../src/images/background.jpg") no-repeat;
+  background-size: cover;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+input,
+button,
+select,
+textarea{
+  outline: 0 !important;
+  border: none;
+  color:#808080;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color:#808080;
+}
+
+
